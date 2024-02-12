@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  main-web-app:
+    container_name: main-web-app
+    build:
+      context: .
+    pull_policy: build
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: "production"
