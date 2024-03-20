@@ -1,17 +1,21 @@
+{
+  admin 0.0.0.0:2020
+}
+
 jeremytools.com {
-  reverse_proxy main-web-app:3000
+  reverse_proxy :3000
 }
 
 pdf.jeremytools.com {
-  reverse_proxy localhost:8081
+  reverse_proxy :8081
 }
 
 it.jeremytools.com {
-  reverse_proxy localhost:8082
+  reverse_proxy :8082
 }
 
 rio2pdf.jeremytools.com { 
-  reverse_proxy localhost:8083
+  reverse_proxy :8083
 }
 
 # static.jeremytools.com {
