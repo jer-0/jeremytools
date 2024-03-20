@@ -62,4 +62,4 @@ networks:
 volumes:
   caddy_data:
     external: true
-  # caddy:
+  caddy:
