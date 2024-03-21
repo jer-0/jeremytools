@@ -3,19 +3,19 @@
 }
 
 jeremytools.com {
-  reverse_proxy :3000
+  reverse_proxy main-web-app:3000
 }
 
 pdf.jeremytools.com {
-  reverse_proxy :8081
+  reverse_proxy stirling-pdf:8081
 }
 
 it.jeremytools.com {
-  reverse_proxy :8082
+  reverse_proxy it-tools:8082
 }
 
 rio2pdf.jeremytools.com { 
-  reverse_proxy :8083
+  reverse_proxy resumeio-to-pdf:8083
 }
 
 # static.jeremytools.com {

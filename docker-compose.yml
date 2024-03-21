@@ -49,17 +49,16 @@ services:
       - "443:443"
       - "443:443/udp"
     volumes:
-      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy:/config
-      - caddy_data:/data
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
       - /var/www:/var/www
+      - caddy_data:/data
+      - caddy_config:/config
 
-networks:
-  default:
-    name: caddy
-    external: true
+# networks:
+#   default:
+#     name: caddy
+#     external: true
 
 volumes:
   caddy_data:
-    external: true
-  caddy:
+  caddy_config:
