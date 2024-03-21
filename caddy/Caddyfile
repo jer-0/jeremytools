@@ -2,20 +2,21 @@
   admin 0.0.0.0:2020
 }
 
-jeremytools.com {
-  reverse_proxy main-web-app:3000
-}
-
 pdf.jeremytools.com {
   reverse_proxy stirling-pdf:8081
 }
 
+jeremytools.com {
+  reverse_proxy main-web-app:3000
+}
+
+
 it.jeremytools.com {
-  reverse_proxy it-tools:8082
+  reverse_proxy localhost:8082
 }
 
 rio2pdf.jeremytools.com { 
-  reverse_proxy resumeio-to-pdf:8083
+  reverse_proxy 127.0.0.1:8083
 }
 
 # static.jeremytools.com {
